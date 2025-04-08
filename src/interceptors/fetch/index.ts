@@ -47,7 +47,7 @@ export class FetchInterceptor extends Interceptor<HttpRequestEventMap> {
         !canParseUrl(input)
           ? new URL(input, location.toString())
           : input
-
+      console.log({ resolvedInput })
       const request = new Request(resolvedInput, init)
       const responsePromise = new DeferredPromise<Response>()
       const controller = new RequestController(request)
