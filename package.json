@@ -104,7 +104,6 @@
     "test:browser": "pnpm playwright test -c test/playwright.config.ts",
     "clean": "rimraf lib",
     "build": "pnpm clean && cross-env NODE_ENV=production tsup --splitting",
-    "prepare": "pnpm simple-git-hooks init",
     "release": "release publish",
     "prepublishOnly": "pnpm build && pnpm test"
   },
