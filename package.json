@@ -109,7 +109,6 @@
   "files": [
     "lib",
     "README.md",
-    "src",
     "ClientRequest",
     "fetch",
     "RemoteHttpInterceptor",
