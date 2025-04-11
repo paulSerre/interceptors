@@ -103,12 +103,13 @@
     "test:node": "vitest -c test/vitest.config.js",
     "test:browser": "pnpm playwright test -c test/playwright.config.ts",
     "clean": "rimraf lib",
-    "build": "pnpm clean && cross-env NODE_ENV=production tsup --splitting",
+    "build": "npm run clean && cross-env NODE_ENV=production tsup --splitting",
     "release": "release publish"
   },
   "files": [
     "lib",
     "README.md",
+    "src",
     "ClientRequest",
     "fetch",
     "RemoteHttpInterceptor",
